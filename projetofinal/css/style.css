@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@200&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+header img {
+    width: 100%;
+}
+
+header ul {
+    list-style: none;
+    padding: 0px;
+    background-color: black;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+
+}
+
+header ul a:link,
+header ul a:visited {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 15px 20px;
+}
+
+header ul a:hover {
+    background-color:purple;
+    color: black
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header h2 {
+    font-size: 18px;
+    color: red;
+}
+
+header h1,
+header h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.vidapessoal {
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+.vidapessoal img {
+    width: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.vidapessoal p {
+    font-size: 14px;
+    margin: 15px 10px 35px 10px;
+}
+.vidadois {
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;    
+    
+}
+.vidadois img {
+    width: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.vidatre img {
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.vidatre {
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;    
+    
+}
+.dois img {
+    width: 250px;
+    padding: 10px;
+}
+
+.dois {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.doisdois p{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: justify;
+    
+}
+.vidaprofissional img {
+    width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.vidaprofissional, .vidaprofissional p {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: justify;
+}
+
+main section>div {
+    padding: 25px;
+}
+
+main section p {
+    font-size: 14px;
+}
+
+main section h2{
+    padding-left:100px;
+    color: blueviolet;
+    text-align: center;
+}
+.dois p {
+    text-align: justify;
+}
+
+.ter img {
+    width: 250px;
+}
+
+.ter {
+    display: flex;
+    flex-direction: column;
+}
+
+.ter p {
+    text-align: justify;
+    padding-right: 10px;
+}
+.quar p {
+    text-align: justify;
+}
+
+main section:nth-child(1) {
+    background-color:darkgray;
+}
+main section:nth-child(3) {
+    background-color:darkgray;
+}
+
+.doisq{display: flex;
+    flex-direction: column;}
+
+.doisq img, .terq {
+    width:400px;}
+
+.doisq p, .doisq h3{
+    padding-left: 10px;
+    padding-right: 10px;
+     
+}
+.vidapessoal p,
+.dois p,
+.ter p, .quar p{
+    font-size: 14px;
+    }
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/*trocar img ao trocar largura navegador*/
+
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+ header img {
+        content: url('../img/toporayssapc.jpg');
+    }
+
+    header ul {
+        text-align: right;
+    }
+
+}
+
+/*Desktop/Computador*/
+@media screen and (min-width: 1024px) {
+    header img {
+        content: url('../img/toporayssapc.jpg');
+    }
+
+    header h1 {
+        font-size: 46px;
+    }
+
+    header h2 {
+        font-size: 28px;
+    }
+
+    .vidapessoal {
+        flex-direction: row;
+        width: 1200px;
+        margin: auto;
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .dois {
+        flex-direction: row;
+    }
+    .vidadois {
+        flex-direction: row;
+    }
+    .vidatre {
+        flex-direction: row;
+    }
+    .vidaprofissional {
+        flex-direction: row;
+        text-align: justify;
+    }
+    .doisdois {
+        flex-direction: row;
+        text-align: justify;
+    }
+    .ter {
+        flex-direction: row;
+    }
+    .quar {
+        flex-direction: row;
+    }
+    main section>div {
+        padding: 45px;
+    }
+
+    .vidapessoal p,
+    .dois p,
+    .ter p,
+    .quar p{
+        font-size: 16px;
+    }
+    .doisq{flex-direction: row;}
+
+    .container {
+        width: 1200px;
+        margin: auto;
+    }
+}
